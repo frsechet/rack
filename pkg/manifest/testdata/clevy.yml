@@ -1,0 +1,6 @@
+services:
+  q-delete-intent:
+    build: ./resources/queues
+    environment:
+      - QUEUE_NAME=delete-intent
+      - POEPOE=giveme-${INTERPOLATE}
